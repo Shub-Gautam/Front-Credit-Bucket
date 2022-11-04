@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <nav className="p-3 border-b-2 flex flex-row">
             <h1 className="px-5 font-medium bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500">
-                Stark
+                Credit Bucket
             </h1>
             <div className="flex flex-row justify-between absolute top-0 right-10 items-center">
                 <Link href="/">
