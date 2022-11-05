@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
     return (
         <div>
-            <div className="fixed h-screen">
+            <div className="fixed h-screen w-1/6">
                 <div className="rounded-r bg-gray-900 xl:hidden flex justify-between w-full p-6 items-center ">
                     <div className="flex justify-between  items-center space-x-3">
                         <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar2-svg1.svg" alt="logo" />
@@ -19,7 +19,7 @@ export default function Header() {
                         </button>
                     </div>
                 </div>
-                <div id="Main" className="xl:rounded-r transform  xl:translate-x-0  ease-in-out transition duration-500 flex justify-start items-start h-full  w-full sm:w-64 bg-gray-900 flex-col">
+                <div id="Main" className="xl:rounded-r transform  xl:translate-x-0  ease-in-out transition duration-500 flex justify-start items-start h-full w-full bg-gray-900 flex-col">
                     <div className="hidden xl:flex justify-start p-6 space-x-3">
                         <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar2-svg1.svg" alt="logo" />
                         <p className="text-2xl leading-6 text-white">Credit Bucket</p>
