@@ -106,7 +106,7 @@ export default function Home() {
     }, [isWeb3Enabled]);
 
     return (
-        <div className="col-span-3 pr-12">
+        <div className="col-span-3 pr-32">
             {isWeb3Enabled ? (
                 <div>
                     {chainId == 80001 ? (

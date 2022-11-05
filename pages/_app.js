@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/mystyles.css"
 import Header from "../components/Header";
 import { MoralisProvider } from "react-moralis";
 import Head from "next/head";

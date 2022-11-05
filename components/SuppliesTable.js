@@ -73,7 +73,7 @@ export default function SuppliesTable({ tokenBalances, tokenAddresses, tokenName
             <div className="p-2 font-medium text-gray-500">
                 Balance ${parseFloat(balanceInUsd).toFixed(2)}
             </div>
-            <div>
+            <div className="rounded-3xl shadow-lg">
                 <Table
                     columnsConfig="80px 2fr 2fr 2fr 2fr 100px"
                     data={data}
