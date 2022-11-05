@@ -73,6 +73,7 @@ export default function AvailableBorrowTable({
     return (
         <div>
             <div className="p-12 pt-6 font-semibold text-2xl text-gray-500">Assets to Borrow</div>
+
             <Table
                 columnsConfig="80px 3fr 2fr 2fr 100px"
                 data={data}

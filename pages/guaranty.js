@@ -7,7 +7,8 @@ import contractAddresses from "../constants/networkMapping.json";
 import erc20Abi from "../constants/Weth.json";
 import { ethers } from "ethers";
 import creditAbi from "../constants/CreditLogic.json";
-import { Button } from "web3uikit";
+// import { Button } from "web3uikit";
+import { Button } from "react-bootstrap";
 import Link from "next/link";
 import PendingGurantees from "../components/PendingGuarantees";
 
@@ -52,6 +53,7 @@ export default function Guaranty() {
 
     async function fetchBalances() {
         console.log("fetching balances......");
+        console.log("Heyassss");
         const balances = [];
         try {
             const { ethereum } = window;
@@ -108,11 +110,15 @@ export default function Guaranty() {
                                 </div>
                                 <div className="h-80">
                                     <Link href="/chat">
-                                        <Button
+                                        {/* <Button
                                             text="Request Guaranty"
                                             theme="primary"
                                             size="large"
-                                        />
+                                            className=""
+                                        /> */}
+                                        <Button variant="primary" size="lg">
+                                            Request Guaranty
+                                        </Button>
                                     </Link>
                                 </div>
                                 <div>
