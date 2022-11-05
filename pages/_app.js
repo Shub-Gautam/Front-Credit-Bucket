@@ -15,10 +15,12 @@ function MyApp({ Component, pageProps }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <MoralisProvider initializeOnMount={false}>
+                <div className="grid grid-cols-4">
                 <NotificationProvider>
                     <Header />
                     <Component {...pageProps} />
                 </NotificationProvider>
+                </div>
             </MoralisProvider>
         </div>
     );
