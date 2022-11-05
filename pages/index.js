@@ -106,12 +106,12 @@ export default function Home() {
     }, [isWeb3Enabled]);
 
     return (
-        <div>
+        <div className="col-span-3 pr-12">
             {isWeb3Enabled ? (
                 <div>
                     {chainId == 80001 ? (
                         !isFetching ? (
-                            <div className="p-4 grid grid-cols-2 gap-4 h-48">
+                            <div className="">
                                 <div className="">
                                     <SuppliesTable
                                         tokenBalances={tokenBalances}
