@@ -27,7 +27,12 @@ export default function Messages({ address, conversation }) {
     return (
         <div>
             <div className="flex flex-wrap whitespace-nowrap border-b-2 pb-1">TO: {address}</div>
-            <div>
+            <div 
+            style = {{ 
+                height: "500px",
+                overflow:"auto",
+                }}
+                >
                 {messages.slice().map((msg, i, arr) => {
                     if (i < arr.length - 10) return;
                     return (

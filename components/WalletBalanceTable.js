@@ -96,7 +96,7 @@ export default function WalletBalanceTable({ tokenBalances, tokenAddresses, toke
                     handleSwitching();
                 }}
             />
-            <div>
+            <div className="rounded-3xl shadow-lg">
                 <Table
                     columnsConfig="80px 2fr 2fr 2fr 2fr 100px"
                     data={data}

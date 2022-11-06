@@ -57,10 +57,10 @@ export default function Auth() {
     return (
         <div>
             {!signed ? (
-                <div className="flex justify-center p-12">
+                <div className="flex justify-center p-12 pr-32">
                     <Button
                         onClick={sign}
-                        text="Sign"
+                        text="Sign In"
                         theme="primary"
                         type="button"
                         size="large"
@@ -69,7 +69,14 @@ export default function Auth() {
                     />
                 </div>
             ) : (
-                <div className="grid grid-cols-4 gap-8 content-start">
+                <div className="grid grid-cols-4">
+                    <div className="p-4 col-span-3">
+                        {conversation ? (
+                            <Messages address={address} conversation={conversation} />
+                        ) : (
+                            <div></div>
+                        )}
+                    </div>
                     <div
                         style={{
                             width: "50vh",
@@ -78,7 +85,7 @@ export default function Auth() {
                         <div>
                             <Hero
                                 align="left"
-                                height="750px"
+                                height="30%"
                                 linearGradient="linear-gradient(113.54deg, rgba(60, 87, 140, 0.5) 14.91%, rgba(70, 86, 169, 0.5) 43.21%, rgba(125, 150, 217, 0.345) 44.27%, rgba(129, 161, 225, 0.185) 55.76%), linear-gradient(151.07deg, #141659 33.25%, #4152A7 98.24%)"
                                 textColor="#fff"
                             >
@@ -107,14 +114,7 @@ export default function Auth() {
                             </Hero>
                         </div>
                     </div>
-                    <div className="p-4">
-                        {conversation ? (
-                            <Messages address={address} conversation={conversation} />
-                        ) : (
-                            <div></div>
-                        )}
-                    </div>
-                    <div className="absolute bottom-8 right-64">
+                    <div className="absolute bottom-32 right-96">
                         <Input
                             label="Enter your message"
                             name="message"
@@ -128,7 +128,7 @@ export default function Auth() {
                             }}
                         />
                     </div>
-                    <div className="absolute bottom-8 right-36">
+                    <div className="absolute bottom-32 right-64">
                         <Button
                             id="test-button-primary"
                             text="Send"
@@ -139,7 +139,7 @@ export default function Auth() {
                             disabled={!connected}
                         />
                     </div>
-                    <div className="absolute bottom-8 right-4">
+                    <div className="absolute bottom-32 right-32">
                         <Button
                             id="test-button-primary"
                             text="Request"

@@ -74,6 +74,7 @@ export default function BorrowsTable({ tokenBalances, tokenAddresses, tokenNames
             <div className="p-2 font-medium text-gray-500">
                 Balance ${parseFloat(balanceInUsd).toFixed(2)}
             </div>
+            <div className="rounded-3xl shadow-lg">
             <Table
                 columnsConfig="80px 3fr 2fr 2fr 100px"
                 data={data}
@@ -83,6 +84,7 @@ export default function BorrowsTable({ tokenBalances, tokenAddresses, tokenNames
                 pageSize={8}
                 isLoading={isLoading}
             />
+            </div>
             <RepayModal
                 isVisible={showModal}
                 onClose={() => setShowModal(false)}

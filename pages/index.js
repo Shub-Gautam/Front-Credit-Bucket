@@ -112,6 +112,7 @@ export default function Home() {
                     {chainId == 80001 ? (
                         !isFetching ? (
                             <div className="">
+                                <div className="grid grid-cols-2 gap-10">
                                 <div className="">
                                     <SuppliesTable
                                         tokenBalances={tokenBalances}
@@ -127,6 +128,7 @@ export default function Home() {
                                         tokenNames={tokenNames}
                                         isFetching={isFetching}
                                     />
+                                </div>
                                 </div>
                                 <div className="">
                                     <WalletBalanceTable

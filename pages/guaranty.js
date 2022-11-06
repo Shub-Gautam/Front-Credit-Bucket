@@ -97,16 +97,13 @@ export default function Guaranty() {
     }, [isWeb3Enabled, tokenBalances]);
 
     return (
-        <div>
+        <div className="col-span-3 pr-32">
             {isWeb3Enabled ? (
                 <div>
                     {chainId == 80001 ? (
                         !isFetching ? (
-                            <div className="p-4 grid grid-cols-2 gap-4 h-48">
-                                <div>
-                                    <PendingGurantees />
-                                </div>
-                                <div className="h-80">
+                            <div className="">
+                                {/* <div className="h-80">
                                     <Link href="/chat">
                                         <Button
                                             text="Request Guaranty"
@@ -114,7 +111,7 @@ export default function Guaranty() {
                                             size="large"
                                         />
                                     </Link>
-                                </div>
+                                </div> */}
                                 <div>
                                     <AvailableBorrowTable
                                         tokenBalances={tokenBalances}
@@ -130,6 +127,9 @@ export default function Guaranty() {
                                         tokenNames={tokenNames}
                                         isFetching={isFetching}
                                     />
+                                </div>
+                                <div>
+                                    <PendingGurantees />
                                 </div>
                             </div>
                         ) : (

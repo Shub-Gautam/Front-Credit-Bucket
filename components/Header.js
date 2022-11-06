@@ -14,9 +14,6 @@ export default function Header() {
                         <button aria-label="open" id="open" onclick="showNav(true)" className="hidden focus:outline-none focus:ring-2" >
                             <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar2-svg2.svg" alt="menu" />
                         </button>
-                        <button aria-label="close" id="close" onclick="showNav(true)" className=" focus:outline-none focus:ring-2" >
-                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar2-svg3.svg" alt="close" />
-                        </button>
                     </div>
                 </div>
                 <div id="Main" className="xl:rounded-r transform  xl:translate-x-0  ease-in-out transition duration-500 flex justify-start items-start h-full w-full bg-gray-900 flex-col">
@@ -45,7 +42,7 @@ export default function Header() {
                            </Link>
                         </button>
                     </div>
-                    <div className="absolute bottom-4">
+                    <div className="absolute bottom-10">
                         <ConnectButton signingMessage={"Logout"} />
                     </div>
                 </div>

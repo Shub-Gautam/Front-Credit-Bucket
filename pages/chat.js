@@ -7,7 +7,7 @@ export default function Chat() {
     const { isWeb3Enabled, account, chainId } = useMoralis();
 
     return (
-        <div>
+        <div className="col-span-3">
             {1 ? (
                 <div>
                     {chainId == 80001 ? (

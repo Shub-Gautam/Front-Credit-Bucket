@@ -23,7 +23,7 @@ export default function RequestLoanModal({ isVisible, onClose, address }) {
                 hasFooter={false}
             >
                 <div className="p-12 p-8 pr-4 pb-12 grid grid-cols-2 gap-1 place-content-stretch h-35">
-                    <div
+                    {/* <div
                         style={{
                             width: "250px",
                         }}
@@ -38,13 +38,9 @@ export default function RequestLoanModal({ isVisible, onClose, address }) {
                                 <Illustration height="180px" logo="token" width="100%" />
                             </div>
                         </Card>
-                    </div>
+                    </div> */}
 
-                    <div
-                        style={{
-                            width: "250px",
-                        }}
-                    >
+                    <div className="col-span-2">
                         <Card
                             description="Take Guaranty from your friend so you can borrow"
                             onClick={() => setShowGuarantyModal(true)}

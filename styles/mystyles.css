@@ -7,28 +7,36 @@ body{
     background: none;
 }
 
-.absolute.bottom-4 > div > div,.absolute.bottom-4 > div > div > div + div {
+.absolute.bottom-10 > div > div,.absolute.bottom-4 > div > div > div {
     background-color: inherit;
 }
-.absolute.bottom-4 > div > div > div + div{
+.absolute.bottom-10 > div > div > div + div{
     border-style: solid;
     border-color: white;
     border-width: 1px;
+    background-color: inherit;
 }
-.absolute.bottom-4 > div > div > div + div > span{
+.absolute.bottom-10 > div > div > div + div > span{
     margin:0!important;
     color:white;
 }
-.absolute.bottom-4 > div > div > div + div:hover{
+.absolute.bottom-10 > div > div > div + div:hover{
     background-color:white;
 }
-.absolute.bottom-4 > div > div > div + div>span:hover{
+.absolute.bottom-10 > div > div > div + div>span:hover{
     color:rgb(17,24,39)
 }
-.absolute.bottom-4 > div > div > div + div > div{
+.absolute.bottom-10 > div > div > div + div > div{
     display:none;
 }
 
-.absolute.bottom-4 button > span {
+.absolute.bottom-10 button > span {
     color:rgb(17,24,39);
+}
+
+@media screen and (max-width:1566px) {
+    .absolute.bottom-10{
+        width:50%;
+    }
+    
 }
