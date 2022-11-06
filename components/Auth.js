@@ -58,7 +58,7 @@ export default function Auth() {
         <div>
             {!signed ? (
                 <div className="flex justify-center p-12 pr-32">
-                    <Button
+                    <Button className="bts-change"
                         onClick={sign}
                         text="Sign In"
                         theme="primary"
@@ -85,14 +85,14 @@ export default function Auth() {
                         <div>
                             <Hero
                                 align="left"
-                                height="30%"
-                                linearGradient="linear-gradient(113.54deg, rgba(60, 87, 140, 0.5) 14.91%, rgba(70, 86, 169, 0.5) 43.21%, rgba(125, 150, 217, 0.345) 44.27%, rgba(129, 161, 225, 0.185) 55.76%), linear-gradient(151.07deg, #141659 33.25%, #4152A7 98.24%)"
+                                height="20%"
+                                linearGradient="linear-gradient(113.54deg, rgba(17,24,39,1) 14.91%, rgba(17,24,39,1) 43.21%, rgba(17,24,39,1) 44.27%, rgba(17,24,39,1) 55.76%), linear-gradient(151.07deg, #141659 33.25%, #4152A7 98.24%)"
                                 textColor="#fff"
                             >
-                                <div className="p-2">
-                                    <Input
+                                <div className="p-2 input-message">
+                                    <Input className="input-text"
                                         name="message"
-                                        width="90px"
+                                        width="100px"
                                         prefixIcon="eth"
                                         onChange={(e) => {
                                             setAddress(e.target.value);
@@ -102,9 +102,8 @@ export default function Auth() {
                                         }}
                                     />
                                 </div>
-                                <Button
-                                    icon="plus"
-                                    text="Add new conversation"
+                                <Button className="bts-2"
+                                    text=" + Add new conversation"
                                     theme="primary"
                                     size="large"
                                     onClick={() => chat()}
@@ -129,7 +128,7 @@ export default function Auth() {
                         />
                     </div>
                     <div className="absolute bottom-32 right-64">
-                        <Button
+                        <Button className="bts-change"
                             id="test-button-primary"
                             text="Send"
                             theme="primary"
@@ -140,7 +139,7 @@ export default function Auth() {
                         />
                     </div>
                     <div className="absolute bottom-32 right-32">
-                        <Button
+                        <Button className="bts-3"
                             id="test-button-primary"
                             text="Request"
                             theme="colored"

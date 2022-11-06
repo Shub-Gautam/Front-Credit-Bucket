@@ -1,5 +1,14 @@
+:root {
+    --dblue: #111827;
+    --blue:#161853;
+    --white: #ffffff;
+    --off-white: #F8F8F8
+  }
+
+
+
 body{
-    background-color: #F5F5F5;
+    background-color: var(--off-white);
 }
 
 .shadow-lg > div > div{
@@ -12,31 +21,78 @@ body{
 }
 .absolute.bottom-10 > div > div > div + div{
     border-style: solid;
-    border-color: white;
+    border-color: var(--white);
     border-width: 1px;
     background-color: inherit;
 }
 .absolute.bottom-10 > div > div > div + div > span{
     margin:0!important;
-    color:white;
+    color:var(--white);
 }
 .absolute.bottom-10 > div > div > div + div:hover{
-    background-color:white;
+    background-color:var(--white);
 }
 .absolute.bottom-10 > div > div > div + div>span:hover{
-    color:rgb(17,24,39)
+    color: var(--dblue)
 }
 .absolute.bottom-10 > div > div > div + div > div{
     display:none;
 }
 
 .absolute.bottom-10 button > span {
-    color:rgb(17,24,39);
+    color:var(--dblue)
 }
 
-@media screen and (max-width:1566px) {
-    .absolute.bottom-10{
-        width:50%;
-    }
-    
+.custom-buttons{
+    height: 130px;
+}
+.custom-buttons:hover, .custom-buttons>img:hover{
+    background-color: var(--blue);
+    color:var(--white);
+}
+
+.lastCol>button,.bts-change{
+    background-color: var(--dblue)!important;
+    border: none !important;
+}
+
+.lastCol>button,.bts-change:hover{
+    background: none!important;
+    background-color: var(--blue)!important;
+}
+
+.bts-2{
+    background: none;
+    background-color: transparent!important;
+    border-color: var(--white)!important;
+}
+.bts-2:hover{
+    background: none!important;
+    background-color: var(--white) !important;
+    color:var(--dblue);
+}
+
+.p-2.input-message > div{
+    outline-color: var(--off-white)!important;
+}
+.jSnyRA:not(.sc-bWOGAC:focus-within).input_filled{
+    outline-color: var(--off-white)!important;
+    color:var(--white);
+}
+.p-2.input-message > div:hover{
+    outline-color: var(--white)!important;
+}
+
+.input-text{
+    color:var(--white)!important;
+}
+
+.bts-3{
+    background:none!important;
+    background-color: transparent!important;
+    border-color:var(--dblue)!important;
+    color:var(--dblue)!important;
+}
+.bts-3:hover{
+    background:none;
 }
