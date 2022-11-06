@@ -30,7 +30,7 @@ export default function Header() {
                            </Link>
                         </button>
                         <button className="flex jusitfy-start items-center w-full focus:outline-none text-white focus:text-indigo-400   rounded ">
-                            <img className="fill-stroke" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar2-svg5.svg" alt="users" />
+                            <img className="fill-stroke" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar2-svg7.svg" alt="users" />
                             <Link href="/guaranty">
                                <a className="text-base leading-4 ml-2">Guaranty</a>
                            </Link>
